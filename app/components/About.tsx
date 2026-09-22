@@ -1,11 +1,19 @@
+import Image from "next/image";
+
+const whatsappNumber = "34624995947 ";
+
+const whatsappMessage = encodeURIComponent(
+  "Hola, quiero reservar una cita en la barbería. ¿Qué horarios tienen disponibles?"
+);
 const barbers = [
   {
     id: 1,
-    name: "Nombre del Barbero",
+    name: "Steban Ortega",
     role: "Barbero profesional",
     description:
       "Especialista en cortes modernos y estilos personalizados.",
-    image: "/barberia.jpeg",
+    image: "/barbero1.jpeg",
+    whatsappMessage:"Hola, quiero reservar una cita en la barbería con Steban Ortega. ¿Qué horarios tienen disponibles?",
   },
   {
     id: 2,
@@ -13,7 +21,17 @@ const barbers = [
     role: "Barbero profesional",
     description:
       "Especialista en barbería clásica y cuidado de barba.",
-    image: "/barberia.jpeg",
+    image: "/barbero2.jpeg",
+    whatsappMessage:"Hola, quiero reservar una cita en la barbería. ¿Qué horarios tienen disponibles?",
+  },
+  {
+    id: 3,
+    name: "Nombre del Barbero",
+    role: "Barbero profesional",
+    description:
+      "Especialista en barbería clásica y cuidado de barba.",
+    image: "/barbero3.jpeg",
+    whatsappMessage:"Hola, quiero reservar una cita en la barbería. ¿Qué horarios tienen disponibles?",
   },
 ];
 
@@ -65,22 +83,30 @@ export default function About() {
           </div>
 
           {/* Bloque visual */}
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#080808] p-8">
-            <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#D9A441]/10 blur-3xl" />
+            <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#080808]">
+              {/* Fotografía del barbero */}
+              <div className="relative h-[360px] w-full overflow-hidden bg-[#0d0d0d]">
+                <Image
+                  src="/corte.jpeg"
+                  alt="Barbero de la barbería"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
 
-            <div className="relative">
-              <p className="text-6xl text-[#D9A441]">✂</p>
+              {/* Información */}
+              <div className="p-8">
+                <h3 className="text-2xl font-bold uppercase text-white">
+                  Calidad en cada detalle
+                </h3>
 
-              <h3 className="mt-6 text-2xl font-bold uppercase text-white">
-                Calidad en cada detalle
-              </h3>
-
-              <p className="mt-4 leading-7 text-gray-400">
-                Desde el primer contacto hasta el resultado final, buscamos
-                ofrecer un servicio profesional, cómodo y personalizado.
-              </p>
+                <p className="mt-4 leading-7 text-gray-400">
+                  Desde el primer contacto hasta el resultado final, buscamos
+                  ofrecer un servicio profesional, cómodo y personalizado.
+                </p>
+              </div>
             </div>
-          </div>
         </div>
 
         {/* Equipo */}
@@ -106,11 +132,15 @@ export default function About() {
                 key={barber.id}
                 className="group overflow-hidden rounded-3xl border border-white/10 bg-[#080808] transition duration-300 hover:-translate-y-2 hover:border-[#D9A441]/50"
               >
-                {/* Espacio para fotografía */}
-                <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-[#2b1b0f] to-[#080808]">
-                  <div className="flex h-28 w-28 items-center justify-center rounded-full border border-[#D9A441]/50 bg-[#111111] text-3xl font-bold text-[#D9A441]">
-                   
-                  </div>
+                {/* Fotografía */}
+                <div className="relative flex h-[320px] w-full items-center justify-center overflow-hidden bg-[#0d0d0d]">
+                  <Image
+                    src={barber.image}
+                    alt={barber.name}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
 
                 {/* Información */}
@@ -128,13 +158,13 @@ export default function About() {
                   </p>
 
                   <a
-                    href="#reservar"
+                    href={`https://wa.me/${whatsappNumber}?text=${barber.whatsappMessage}`}
                     className="mt-6 inline-block text-sm font-semibold uppercase tracking-wide text-[#D9A441] transition hover:text-white"
                   >
                     Reservar con este barbero →
                   </a>
-                </div>
               </div>
+            </div>
             ))}
           </div>
         </div>

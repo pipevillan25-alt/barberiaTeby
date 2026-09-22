@@ -56,10 +56,11 @@ export default function Navbar() {
 
         {/* Botón */}
         <a
-          href="#reservar"
+          href="https://booksy.com/es-es/139376_teby-barber-experience_barberia_53221_camarma-de-esteruelas#ba_s=sh_1"
           className="hidden rounded-full border border-[#D9A441] px-5 py-2.5 text-sm font-semibold text-[#D9A441] transition hover:bg-[#D9A441] hover:text-black md:block"
+          target="_blank"
         >
-          Reservar cita
+          Reservar cita con Booksy
         </a>
       </div>
     </nav>

@@ -8,7 +8,7 @@ export default function Hero() {
     >
       {/* Imagen de fondo */}
       <Image
-        src="/barberia.jpeg"
+        src="/barber1.jpeg"
         alt="Interior de la barbería"
         fill
         priority
@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           
           <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-[#D9A441]">
-            Barbería & Grooming
+            Barbería & Experience
           </p>
 
           <h1 className="text-5xl font-bold uppercase leading-tight tracking-tight text-white sm:text-6xl lg:text-8xl">

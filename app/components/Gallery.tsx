@@ -4,19 +4,19 @@ import { useEffect, useState } from "react";
 
 const galleryImages = [
   {
-    src: "/barberia.jpeg",
+    src: "/barber1.jpeg",
     alt: "Interior de la barbería",
   },
   {
-    src: "/barberia.jpeg",
+    src: "/corte.jpeg",
     alt: "Espacio de trabajo de la barbería",
   },
   {
-    src: "/barberia.jpeg",
+    src: "/barbaspa.jpeg",
     alt: "Interior de la barbería",
   },
   {
-    src: "/barberia.jpeg",
+    src: "/limpiezafacial.jpeg",
     alt: "Zona de barbería",
   },
   {
@@ -24,7 +24,7 @@ const galleryImages = [
     alt: "Espacio de atención",
   },
   {
-    src: "/barberia.jpeg",
+    src: "/example.jpeg",
     alt: "Barbería",
   },
 ];

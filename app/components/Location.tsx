@@ -48,13 +48,18 @@ export default function Location() {
 
               <div className="mt-4 space-y-3 text-sm text-gray-400">
                 <div className="flex justify-between gap-4">
-                  <span>Lunes - Viernes</span>
-                  <span className="text-white">9:00 - 20:00</span>
+                  <span>Lunes </span>
+                  <span className="text-white">16:00 - 20:00</span>
+                </div>
+
+                 <div className="flex justify-between gap-4">
+                  <span>Martes - Viernes </span>
+                  <span className="text-white">10:00 - 20:00</span>
                 </div>
 
                 <div className="flex justify-between gap-4">
                   <span>Sábado</span>
-                  <span className="text-white">9:00 - 18:00</span>
+                  <span className="text-white">10:30 - 14:30</span>
                 </div>
 
                 <div className="flex justify-between gap-4">

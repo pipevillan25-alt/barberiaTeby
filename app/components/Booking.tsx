@@ -1,3 +1,9 @@
+import { MessageCircle } from "lucide-react";
+const whatsappNumber = "34624995947 ";
+
+const whatsappMessage = encodeURIComponent(
+  "Hola, quiero reservar una cita en la barbería. ¿Qué horarios tienen disponibles?"
+);
 export default function Booking() {
   return (
     <section
@@ -24,12 +30,13 @@ export default function Booking() {
         </p>
 
         <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-          <a
-            href="#contacto"
-            className="rounded-full bg-[#D9A441] px-8 py-4 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-[#C58A3A]"
-          >
-            Reservar cita
-          </a>
+          <a href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`} 
+          className="inline-flex items-center justify-center gap-2 rounded-full 
+          bg-[#25D366] px-8 py-4 text-sm font-bold uppercase tracking-wide text-black shadow-lg 
+          shadow-[#25D366]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#1ebe5d] 
+          hover:shadow-xl hover:shadow-[#25D366]/30 active:translate-y-0" > 
+          <MessageCircle className="h-5 w-5" strokeWidth={2.5} /> 
+          WhatsApp </a>
 
           <a
             href="#servicios"
