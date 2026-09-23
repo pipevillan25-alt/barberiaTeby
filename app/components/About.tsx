@@ -11,27 +11,27 @@ const barbers = [
     name: "Steban Ortega",
     role: "Barbero profesional",
     description:
-      "Especialista en cortes modernos y estilos personalizados.",
+      "Barbero profesional especializado en el cuidado y diseño de barbas, cortes modernos y estilos personalizados. Experto en degradados, cortes actuales, perfilados y diseños con navaja.",
     image: "/barbero1.jpeg",
     whatsappMessage:"Hola, quiero reservar una cita en la barbería con Steban Ortega. ¿Qué horarios tienen disponibles?",
   },
   {
     id: 2,
-    name: "Nombre del Barbero",
+    name: "Julian",
     role: "Barbero profesional",
     description:
-      "Especialista en barbería clásica y cuidado de barba.",
+      "Barbero profesional con experiencia en técnicas de coloración masculina, capaz de crear looks personalizados que se adapten al estilo, tono de piel .",
     image: "/barbero2.jpeg",
-    whatsappMessage:"Hola, quiero reservar una cita en la barbería. ¿Qué horarios tienen disponibles?",
+    whatsappMessage:"Hola, quiero reservar una cita en la barbería con Julian. ¿Qué horarios tienen disponibles?",
   },
   {
     id: 3,
-    name: "Nombre del Barbero",
+    name: "Alex",
     role: "Barbero profesional",
     description:
-      "Especialista en barbería clásica y cuidado de barba.",
+      "Barbero profesional especializado en el cuidado y diseño de barbas, cortes modernos y estilos personalizados. Experto en degradados, cortes actuales, perfilados y diseños con navaja.",
     image: "/barbero3.jpeg",
-    whatsappMessage:"Hola, quiero reservar una cita en la barbería. ¿Qué horarios tienen disponibles?",
+    whatsappMessage:"Hola, quiero reservar una cita en la barbería con Alex. ¿Qué horarios tienen disponibles?",
   },
 ];
 

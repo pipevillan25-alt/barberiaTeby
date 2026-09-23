@@ -36,7 +36,17 @@ export default function Booking() {
           shadow-[#25D366]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#1ebe5d] 
           hover:shadow-xl hover:shadow-[#25D366]/30 active:translate-y-0" > 
           <MessageCircle className="h-5 w-5" strokeWidth={2.5} /> 
-          WhatsApp </a>
+          WhatsApp 
+          </a>
+
+          {/* Botón */}
+          <a
+            href="https://booksy.com/es-es/139376_teby-barber-experience_barberia_53221_camarma-de-esteruelas#ba_s=sh_1"
+            className="rounded-full border border-[#D9A441] px-8 py-4 text-sm font-bold uppercase text-[#D9A441] transition hover:bg-[#D9A441] hover:text-black md:block"
+            target="_blank"
+          >
+            Reservar cita con Booksy
+          </a>
 
           <a
             href="#servicios"

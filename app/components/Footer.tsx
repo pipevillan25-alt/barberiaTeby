@@ -153,7 +153,7 @@ export default function Footer() {
 
           {/* Dirección */}
           <div className="mt-10 text-sm text-gray-500">
-            Avenida de los Cazadores 5 · Camarma de Esteruelas, España
+            Avenida de los Cazadores 5 · Camarma de Esteruelas, España.
           </div>
         </div>
 
