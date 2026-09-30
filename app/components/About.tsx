@@ -17,15 +17,6 @@ const barbers = [
   },
   {
     id: 2,
-    name: "Julian",
-    role: "Barbero profesional",
-    description:
-      "Barbero profesional con experiencia en técnicas de coloración masculina, capaz de crear looks personalizados que se adapten al estilo, tono de piel .",
-    image: "/barbero2.jpeg",
-    whatsappMessage:"Hola, quiero reservar una cita en la barbería con Julian. ¿Qué horarios tienen disponibles?",
-  },
-  {
-    id: 3,
     name: "Alex",
     role: "Barbero profesional",
     description:
@@ -33,6 +24,8 @@ const barbers = [
     image: "/barbero3.jpeg",
     whatsappMessage:"Hola, quiero reservar una cita en la barbería con Alex. ¿Qué horarios tienen disponibles?",
   },
+  
+  
 ];
 
 export default function About() {
